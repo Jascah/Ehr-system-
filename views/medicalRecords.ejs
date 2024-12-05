@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Records</title>
+</head>
+<body>
+    <h2>Medical Records</h2>
+    <ul>
+        <% records.forEach(record => { %>
+            <li><%= record.description %> - <%= record.date %></li>
+        <% }); %>
+    </ul>
+    <a href="/patients">Back to Patients List</a>
+</body>
+</html>
